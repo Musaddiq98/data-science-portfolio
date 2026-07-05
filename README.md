@@ -344,7 +344,6 @@ I am actively seeking opportunities in Data Science, Machine Learning Engineerin
 
 - **LinkedIn:** www.linkedin.com/in/musaddiqahmed99
 - **Email:** musaddiqahmed99@gmail.com
-- **Portfolio Website:** 
 
 ---
 
