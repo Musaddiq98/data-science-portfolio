@@ -1,98 +1,53 @@
-# Data Science Portfolio
+# Data Science Portfolio — Musaddiq Ahmed
 
-Welcome to my Data Science portfolio. This repository presents the projects and assignments I completed during my Data Science certification program, with a focus on practical machine learning workflows, statistical analysis, NLP, deep learning, time series forecasting, and recommendation systems.
+This repository contains the work I completed during my **ExcelR Solutions Data Science Certification** — including topic-wise assignment notebooks and two full capstone projects built from real datasets.
 
-**Program:** ExcelR Solutions - Data Science Certification  
-**Focus:** Predictive Modeling, Statistical Inference, NLP, Neural Networks, Unsupervised Learning  
-**Tools:** Python, Scikit-learn, TensorFlow/Keras, Pandas, NumPy, Matplotlib, Seaborn, Streamlit
+Everything here reflects what I actually built, analysed, and deployed. The notebooks cover the full learning arc from descriptive statistics through to deep learning and recommendation systems.
+
+---
 
 ## Capstone Projects
 
-### Bankruptcy Prevention System
+### 🏦 Bankruptcy Prevention System
+Companies fail — but financial data often signals it months in advance. This project takes a dataset of financial ratios and builds a classifier that flags companies at risk of going bankrupt before it happens.
 
-A predictive analytics solution for identifying companies at risk of bankruptcy from financial indicators.
+I worked through the full pipeline: explored the data, handled class imbalance, scaled features, compared multiple classifiers, and wrapped the final model in a Streamlit app so predictions can be made interactively without touching any code.
 
-- **Problem:** Financial institutions and stakeholders need early warning signals for business failure risk.
-- **Approach:** Built a supervised classification workflow using preprocessing, feature scaling, model training, and evaluation.
-- **Interview value:** Shows business framing, classification modeling, model evaluation, and deployment thinking.
-- **Tech Stack:** Python, Pandas, NumPy, Scikit-learn, Streamlit
+→ [View project folder](./capstone-bankruptcy-prevention/)
 
-[View Project](./capstone-bankruptcy-prevention/)
+---
 
-### Book Recommendation System
+### 📚 Book Recommendation System
+Given a dataset of user ratings across thousands of books, this project recommends books a user is likely to enjoy based on what similar users have read and liked.
 
-A recommendation engine that suggests books using collaborative filtering and popularity-based recommendations.
+Built using user–user collaborative filtering, with a Streamlit interface where you can enter a user and get back personalised recommendations instantly.
 
-- **Problem:** Readers need relevant suggestions from a large catalog of books.
-- **Approach:** Processed user-book interaction data, created recommendation logic, and built an interactive Streamlit interface.
-- **Interview value:** Shows recommender-system design, sparse interaction data handling, and user-facing model deployment.
-- **Tech Stack:** Python, Pandas, NumPy, Scikit-learn, Streamlit
+→ [View project folder](./capstone-book-recommendation/)
 
-[View Project](./capstone-book-recommendation/)
+---
 
-## Assignments by Topic
+## Assignment Notebooks by Topic
 
-| Area | What It Demonstrates |
-| :--- | :--- |
-| Statistics & Probability | Hypothesis testing, confidence intervals, probability distributions |
-| Regression Analysis | Simple and multiple linear regression, diagnostics, model interpretation |
-| Classification | Logistic regression, decision trees, SVM, Naive Bayes, KNN |
-| Clustering | K-Means, hierarchical clustering, DBSCAN, customer segmentation |
-| NLP | Text preprocessing, sentiment analysis, spam detection, TF-IDF |
-| Neural Networks | Feedforward neural networks, activation functions, model tuning |
-| Time Series | Trend/seasonality analysis, ARIMA/SARIMA, forecast evaluation |
-| Recommendation Systems | Association rules, collaborative filtering, recommendation logic |
+| # | Topic | What's covered |
+|---|-------|----------------|
+| 01 | [Statistics](./01-statistics/) | Descriptive stats, distributions, hypothesis testing |
+| 02 | [Regression](./02-regression/) | Simple & multiple linear regression, logistic regression |
+| 03 | [Classification](./03-classification/) | Decision trees, KNN, Naive Bayes, Random Forests, SVM |
+| 04 | [Clustering](./04-clustering/) | K-Means, hierarchical clustering, PCA |
+| 05 | [NLP](./05-nlp/) | Text mining, sentiment analysis |
+| 06 | [Neural Networks](./06-neural-networks/) | ANN with TensorFlow/Keras |
+| 07 | [Time Series](./07-time-series/) | ARIMA, trend and seasonality decomposition |
+| 08 | [Recommendation Systems](./08-recommendation-systems/) | Collaborative filtering, association rules |
 
-## Technical Skills
+---
 
-- **Programming:** Python, Jupyter Notebook, Git, GitHub
-- **Data Analysis:** Pandas, NumPy, Matplotlib, Seaborn
-- **Machine Learning:** Scikit-learn, supervised learning, unsupervised learning, model evaluation
-- **Deep Learning:** TensorFlow, Keras, neural-network fundamentals
-- **Deployment:** Streamlit applications and model serialization
-- **Statistics:** Hypothesis testing, confidence intervals, probability distributions
+## Tech Stack
+Python · Pandas · NumPy · Scikit-learn · TensorFlow · Keras · Matplotlib · Seaborn · Streamlit · Jupyter
 
-## Repository Structure
+---
 
-```text
-.
-├── README.md
-├── requirements.txt
-├── capstone-bankruptcy-prevention/
-├── capstone-book-recommendation/
-├── 01-statistics/
-├── 02-regression/
-├── 03-classification/
-├── 04-clustering/
-├── 05-nlp/
-├── 06-neural-networks/
-├── 07-time-series/
-└── 08-recommendation-systems/
-```
+## About Me
+I'm actively looking for roles in Data Science, Machine Learning, and Analytics.
 
-## How to Run
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-Run notebooks:
-
-```bash
-jupyter notebook
-```
-
-Run Streamlit apps:
-
-```bash
-streamlit run app.py
-```
-
-## Contact
-
-I am actively seeking opportunities in Data Science, Machine Learning, and Analytics.
-
-- **LinkedIn:** www.linkedin.com/in/musaddiqahmed99
-- **Email:** musaddiqahmed99@gmail.com
+- 🔗 [linkedin.com/in/musaddiqahmed99](https://www.linkedin.com/in/musaddiqahmed99)
+- 📧 musaddiqahmed99@gmail.com

@@ -1,53 +1,50 @@
 # Bankruptcy Prevention System
 
-A machine learning project for identifying companies that may be at risk of bankruptcy from financial indicators. The goal is to support earlier risk review by turning raw financial ratios into an interpretable classification workflow.
+Predicting company bankruptcy risk from financial indicators using supervised classification — with a Streamlit app for live predictions.
 
-## Project Overview
+---
 
-This project demonstrates an end-to-end supervised learning workflow:
+## The Problem
 
-- Data cleaning and preprocessing
-- Exploratory data analysis
-- Feature scaling
-- Classification model training
-- Model evaluation with business-focused metrics
+Bankruptcy doesn't happen overnight — financial data usually shows warning signs months before a company collapses. But manually reviewing financial ratios across hundreds of companies is slow and inconsistent. This project automates that early-warning process using machine learning.
 
-## Business Problem
-
-Bankruptcy can create major losses for investors, creditors, employees, and other stakeholders. Traditional financial review can be slow and subjective, so an analytical early-warning system helps prioritize companies that need closer attention.
+---
 
 ## Dataset
 
-- Financial ratios and company performance indicators
-- Binary target variable:
-  - `0`: Non-bankrupt
-  - `1`: Bankrupt
+Financial risk indicators for companies, with a binary label:
+- `0` → At risk of bankruptcy
+- `1` → Financially stable
 
-## Machine Learning Approach
+**Features:** industrial risk, management risk, financial flexibility, credibility, competitiveness, and operating risk — all scored on a 0–1 scale.
 
-The workflow compares multiple classification models and selects the best-performing option based on recall and F1-score, because identifying at-risk companies is more important than only maximizing accuracy.
+---
 
-## Evaluation Metrics
+## What I Built
 
-- Accuracy
-- Precision
-- Recall
-- F1-score
-- Confusion matrix
+**Notebook (`Bankruptcy Prevention.ipynb`):**
+- Loaded and explored the dataset — checked class distribution, feature correlations
+- Preprocessed with label encoding and StandardScaler
+- Trained Logistic Regression, Decision Tree, Random Forest, and KNN
+- Evaluated with accuracy, confusion matrix, and classification report
+- Chose the best model based on recall — because predicting a bankrupt company as safe is much worse than the reverse
 
-## Tech Stack
+**Streamlit App (`app.py`):**
+- Input sliders for each financial indicator
+- Instant prediction with probability score
+- Clean, simple UI anyone can use without knowing Python
 
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Matplotlib
-- Seaborn
-- Streamlit
+---
 
-## Interview Highlights
+## Results
 
-- Framed bankruptcy prediction as a risk-management classification problem
-- Compared classification models instead of relying on a single algorithm
-- Prioritized recall and F1-score to reduce missed high-risk companies
-- Built toward a deployable Streamlit application
+Random Forest gave the best performance overall, with high accuracy and strong recall on the bankruptcy class.
+
+---
+
+## Run Locally
+
+```bash
+pip install pandas numpy scikit-learn streamlit
+streamlit run app.py
+```
